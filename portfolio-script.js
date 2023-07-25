@@ -131,7 +131,7 @@ while True:
     {//Choose your own adventure
         "title":"Choose your own adventure",
         "description":"Embark on a journey through the eyes of a renowned knight, where you dictate the course of events in this text-based 'Choose Your Own Adventure' made using Python 3. Navigate through a multitude of choices, each holding the potential to lead you towards fame and fortune or an grim demise.",
-        "imageLink":"project-pictures\\ChooseAdventureFile.gif",
+        "imageLink":"project-pictures\\ChooseAdventure.gif",
         "githubLink":"https://github.com/LucasCundiff/Choose-Your-Own-Adventure",
         "sampleCode":
         `
