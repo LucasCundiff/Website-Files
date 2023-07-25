@@ -186,7 +186,7 @@ def __init__(self, choice, options, entry, ending=False):
     {
         "title":"The Guardian Project",
         "description":"Dive into my work-in-progress Unity 3D game, where you assume the role of an arcane construct, imbued with the souls of the mightiest warriors. Tragically, you find yourself cast into the depths of hell. It's now up to you to harness your collective might, battling formidable foes as you seek to escape this infernal realm. ",
-        "imageLink":"project-pictures\\guardianProjectFile.png",
+        "imageLink":"project-pictures\\GuardianProjectFile.png",
         "githubLink":"https://www.dropbox.com/sh/o36q4q9y7yg73na/AAB8gyCuuTvObb7uOMac-jLIa?dl=0",
         "sampleCode":
         `
