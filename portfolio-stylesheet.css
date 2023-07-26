@@ -137,7 +137,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75vw;
 }
 
 .skills-list{
@@ -204,4 +203,9 @@ button
 
     .source-code{
         font-size: 10px;}
+
+    .about-me{
+        align-items: flex-start;
+        text-align: start;
+    }
 }
