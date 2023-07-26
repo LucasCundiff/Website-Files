@@ -136,6 +136,8 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 75vw;
 }
 
 .skills-list{
@@ -201,6 +203,5 @@ button
     }
 
     .source-code{
-        font-size: 10px;
-    }
+        font-size: 10px;}
 }
