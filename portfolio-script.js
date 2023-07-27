@@ -5,6 +5,7 @@ function loadRecentProjectsBody(){
     document.getElementById("recent-projects").innerHTML += `<button class="project-button"onclick="loadProject(${1})">${allProjects[1].title}</button>`;
     document.getElementById("recent-projects").innerHTML += `<button class="project-button"onclick="loadProject(${2})">${allProjects[2].title}</button>`;
     document.getElementById("recent-projects").innerHTML += `<button class="project-button"onclick="loadProject(${3})">${allProjects[3].title}</button>`;
+    document.getElementById("recent-projects").innerHTML += `<button class="project-button"onclick="loadProject(${3})">${allProjects[4].title}</button>`;
     loadProject(0);
  }
  
@@ -14,7 +15,7 @@ function loadRecentProjectsBody(){
      let projImg = document.getElementById("project-img");
      projImg.src = allProjects[projectIndex].imageLink;
      let projLink = document.getElementById("project-link");
-     projLink.href = allProjects[projectIndex].githubLink;
+     projLink.href = allProjects[projectIndex].projectLink;
      document.getElementById("source-code-txt").innerHTML = allProjects[projectIndex].sampleCode;
  }
 
@@ -23,10 +24,10 @@ function loadRecentProjectsBody(){
     body.innerHTML = ""
     allProjects.forEach(project => {
         body.innerHTML += `
-        <h2 id="project-header">${project.title}</h2>
+        <h3 id="project-header">${project.title}</h3>
         <h4>Brief Description</h4>
         <p id="project-description" style="max-width: 600px; margin: auto; padding-bottom: 25px;">${project.description}</p>
-        <h4>Project Link: <span><a id="project-link" href="${project.githubLink}">Link to project</a></span></h4>
+        <h4>Project Link: <span><a id="project-link" href="${project.projectLink}">Link to project</a></span></h4>
         `
     });
 
@@ -38,7 +39,7 @@ function loadRecentProjectsBody(){
          "title":"",
          "description":"",
          "imageLink":"",
-         "githubLink":"",
+         "projectLink":"",
          "sampleCode":
          `
          `
@@ -54,7 +55,7 @@ const allProjects =
         "title":"31 in Python",
         "description":"Enjoy this text-based version of the classic card game, 31. Made in Python 3, you'll be able to pick your name, number of opponents, and engage in fun strategic gameplay!",
         "imageLink":"project-pictures\\31PythonFile.png",
-        "githubLink":"https://github.com/LucasCundiff/Thirty-One-In-Python",
+        "projectLink":"https://github.com/LucasCundiff/Thirty-One-In-Python",
         "sampleCode":
         `
 def determine_score(hand):
@@ -96,7 +97,7 @@ def get_lowest_card(hand, new_card):
         "title":"Login Manager",
         "description":"Experience a user-friendly Python 3 login manager that offers versatile functionalities. This application allows users to effortlessly create accounts, login to existing ones, and even delete accounts. All user data is stored in a JSON file. The project comes in two versions, a text-based experience and an appJar-based GUI",
         "imageLink":"project-pictures\\ComputerIconFile.gif",
-        "githubLink":"https://github.com/LucasCundiff/Login-Managers",
+        "projectLink":"https://github.com/LucasCundiff/Login-Managers",
         "sampleCode":
         `
 def login():
@@ -132,7 +133,7 @@ while True:
         "title":"Choose your own adventure",
         "description":"Embark on a journey through the eyes of a renowned knight, where you dictate the course of events in this text-based 'Choose Your Own Adventure' made using Python 3. Navigate through a multitude of choices, each holding the potential to lead you towards fame and fortune or an grim demise.",
         "imageLink":"project-pictures\\ChooseAdventure.gif",
-        "githubLink":"https://github.com/LucasCundiff/Choose-Your-Own-Adventure",
+        "projectLink":"https://github.com/LucasCundiff/Choose-Your-Own-Adventure",
         "sampleCode":
         `
 class Scene:
@@ -182,12 +183,58 @@ def __init__(self, choice, options, entry, ending=False):
     print("The end. Thanks for playing!")
     pause = input()    
         `
-    }, //Guardian Project
-    {
+    },
+    {//Website
+        "title":"My Website",
+        "description":"I have developed this website as a sophisticated platform to showcase my portfolio professionally. Here, you can explore an array of my diverse projects, demonstrating my skills and dedication to coding.",
+        "imageLink":"project-pictures\\PortfolioIcon.png",
+        "projectLink":"https://lucascundiff.github.io/Website-Files/index.html",
+        "sampleCode":
+        `
+        header{  
+            display: flex;
+            flex-direction: column;
+            background-color: #1D1D1D;
+            text-align: left;
+            max-height: 200px;
+            max-width: 1920px;
+            padding-left: 15px;
+            margin: 0;
+        }
+        
+        .nav-buttons{
+            display: flex;
+            flex-direction: row;
+            background-color: #1D1D1D;
+            max-height: 50px;
+        }
+        
+        .nav-button-active{
+            background-color: #353535;
+            font-size: 15px;
+            color: #97BFBF;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .nav-button-inactive{
+            background-color: #1D1D1D;
+            font-size: 15px;
+            color: #97BFBF;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+        }
+        `
+    },
+    {//Guardian Project
         "title":"The Guardian Project",
         "description":"Dive into my work-in-progress Unity 3D game, where you assume the role of an arcane construct, imbued with the souls of the mightiest warriors. Tragically, you find yourself cast into the depths of hell. It's now up to you to harness your collective might, battling formidable foes as you seek to escape this infernal realm. ",
         "imageLink":"project-pictures\\GuardianProjectFile.png",
-        "githubLink":"https://www.dropbox.com/sh/o36q4q9y7yg73na/AAB8gyCuuTvObb7uOMac-jLIa?dl=0",
+        "projectLink":"https://www.dropbox.com/sh/o36q4q9y7yg73na/AAB8gyCuuTvObb7uOMac-jLIa?dl=0",
         "sampleCode":
         `
 public class CharacterStats : MonoBehaviour, IDamageable
