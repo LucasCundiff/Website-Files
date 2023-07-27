@@ -5,7 +5,7 @@ function loadRecentProjectsBody(){
     document.getElementById("recent-projects").innerHTML += `<button class="project-button"onclick="loadProject(${1})">${allProjects[1].title}</button>`;
     document.getElementById("recent-projects").innerHTML += `<button class="project-button"onclick="loadProject(${2})">${allProjects[2].title}</button>`;
     document.getElementById("recent-projects").innerHTML += `<button class="project-button"onclick="loadProject(${3})">${allProjects[3].title}</button>`;
-    document.getElementById("recent-projects").innerHTML += `<button class="project-button"onclick="loadProject(${3})">${allProjects[4].title}</button>`;
+    document.getElementById("recent-projects").innerHTML += `<button class="project-button"onclick="loadProject(${4})">${allProjects[4].title}</button>`;
     loadProject(0);
  }
  
