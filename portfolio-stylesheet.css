@@ -20,7 +20,7 @@ header{
 .nav-button-active{
     background-color: #353535;
     font-size: 15px;
-    color: #97BFBF;
+    color: #fff5bd; 
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -30,7 +30,7 @@ header{
 .nav-button-inactive{
     background-color: #1D1D1D;
     font-size: 15px;
-    color: #97BFBF;
+    color: #fff5bd; 
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -135,7 +135,7 @@ footer{
 }
 
 .skills-list{
-    color: #97BFBF;
+    color: #ffffff;
 }
 
 .personal-pic{
@@ -151,7 +151,7 @@ h1{
 
 h2{
     font-size: 40px;
-    color: #ffd900;
+    color: #e2ad00;
     text-align: center;
 }
 
@@ -179,9 +179,10 @@ a{
     text-align: center;
 }
 
+
 button
 {
-    color: #97BFBF;
+    color: #fff5bd; 
     border: solid #353535;
     border-width: 2px;
     background-color: #1D1D1D;
